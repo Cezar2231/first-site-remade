@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Stoil Georgiev">
+		<meta name="description" content="Trees are crucial for the survival of humans, animals, and the environment. Help save the Earth!">
+		
+		<title>Save The Earth</title>	
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/b2t/css/b2t.css">
+		
+		<link rel="stylesheet" href="css/default.css">
+	</head>
+	
+
+	<body>
+		<div onclick="moveTo(0)" class="b2t_btn" title="Go to top">
+			<!-- svg credit to getbootstrap.com -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+			</svg>
+		</div>
+		
+		<header>
+			<div class="container m-5">
+				<a class="branding" href="index.html" style="--i:1;">
+					<img src="img/logo.png" alt="Save the Earth logo" href="index.html">				
+					Save the Earth
+				</a>
+				
+				<nav class="main-nav">
+					<!-- when creating another page, move the active class to the correct button -->
+					<a class="menu-item" href="index.html" style="--i:2;">Home</a>
+					<a class="menu-item active" href="about-us.html" style="--i:3;">About Us</a>
+					<a class="menu-item" href="contacts.html" style="--i:4;">Contacts</a>
+					<a class="menu-item" href="events.html" style="--i:5;">Events</a>
+					<a class="menu-item" href="support-us.html" style="--i:6;">Support us</a>
+					
+					<a href="#" class="fa fa-facebook" style="--i:7;"></a>
+					<a href="#" class="fa fa-twitter" style="--i:8;"></a>
+					<a href="#" class="fa fa-instagram" style="--i:9;"></a>
+				</nav>	
+				<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					<ul class="mobile-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About us</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="support-us.html">Support us</a></li>
+					</ul>
+				</div>
+		</header>
+
+
+    <section>
+      <div class="container">
+        <h1 class="main-heading">About us</h1>
+        <h2 class="main-subheading">
+          We are a dynamic group with a bold mission - to plant as many trees as possible.
+          Our journey began a few years ago when we planted our first tree in our backyard.
+          Since then, our passion for reforestation has grown, and we continue to attract new volunteers each day.
+          We invite you to join us in this vital cause. Together, we can help ensure that future generations have access to clean air.      
+        </h2>  
+
+        <div class="row">
+          <div>
+            <img class="about-img" src="img/plt.jpg" alt="planting tree" width="100%">
+          </div>
+        
+            <img class="about-img" src="img/plt3.jpg" alt="planting tree" width="100%">
+        </div>    
+      </div>
+    </section>
+
+
+    <footer>
+			<div class="m-5">
+				<a class="join-us" href="support-us.html">Join us</a>
+				
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+		</footer>
+		
+		<script src="js/header.js"></script>
+		<script src="vendor/b2t/js/b2t.js"></script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Stoil Georgiev">
+		<meta name="description" content="Trees are crucial for the survival of humans, animals, and the environment. Help save the Earth!">
+		
+		<title>Save The Earth</title>	
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/b2t/css/b2t.css">
+		
+		<link rel="stylesheet" href="css/default.css">
+	</head>
+	
+
+	<body>
+		<div onclick="moveTo(0)" class="b2t_btn" title="Go to top">
+			<!-- svg credit to getbootstrap.com -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+			</svg>
+		</div>
+		
+		<header>
+			<div class="container m-5">
+				<a class="branding" href="index.html" style="--i:1;">
+					<img src="img/logo.png" alt="Save the Earth logo" href="index.html">				
+					Save the Earth
+				</a>
+				
+				<nav class="main-nav">
+					<!-- when creating another page, move the active class to the correct button -->
+					<a class="menu-item" href="index.html" style="--i:2;">Home</a>
+					<a class="menu-item" href="about-us.html" style="--i:3;">About Us</a>
+					<a class="menu-item" href="contacts.html" style="--i:4;">Contacts</a>
+					<a class="menu-item" href="events.html" style="--i:5;">Events</a>
+					<a class="menu-item active" href="support-us.html" style="--i:6;">Support us</a>
+					
+					<a href="#" class="fa fa-facebook" style="--i:7;"></a>
+					<a href="#" class="fa fa-twitter" style="--i:8;"></a>
+					<a href="#" class="fa fa-instagram" style="--i:9;"></a>
+				</nav>	
+				<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					<ul class="mobile-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About us</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="support-us.html">Support us</a></li>
+					</ul>
+				</div>
+		</header>
+		
+		
+		<section>
+      <h1 class="main-heading text-center">Support us</h1> 
+      <div class="row mt-5"> 
+        <div class="main-text">
+          <p class="text">We believe that every individual can make a difference in our environment and our community.Here are some ways you can support us:
+          </p>
+
+          <div class="col-3">
+            <h3 class="donation-text">Make a Donation</h3>
+            <p class="text"> Your donation will help us fund our tree planting projects and maintain our existing trees. Every dollar counts, and your contribution will directly impact the number of trees we can plant and the places we can plant them. You can make a one-time donation or become a monthly donor to support us in the long run.</p>
+          </div>
+<!--
+          <div class="col-2">
+            <img src="img/donation.jfif" alt="tree" width="100%">
+          </div>
+-->
+          <h3 class="donation-text">Volunteer</h3>
+            <p class="text"> We always welcome volunteers to help us with our tree planting events and maintenance activities. As a volunteer, you will get a chance to work alongside our team and learn more about trees and their benefits. We organize various events throughout the year, and you can choose to participate in any of them.</p> 
+          <h3 class="donation-text">Spread the Word</h3>
+            <p class="text"> Help us raise awareness about the importance of planting trees by sharing our website and social media pages with your friends and family. You can also follow us on social media and share our posts to help us reach a wider audience. The more people know about our cause, the more support we can get.</p>
+          <h3 class="donation-text">Conclusion:</h3>
+            <p class="text">We believe that every effort counts in making a positive impact on the environment. By supporting us, you can contribute to a healthier and more sustainable future. Thank you for your support!</p>
+          </div> 
+
+        <!--
+      <div>
+        <a class="donate-button" href="card.html">Donate</a>
+        <a class="contact-button" href="Contacts.html">Contact us</a>
+        <a href="#" class="fa fa-facebook" style="--i:7;"></a>
+        <a href="#" class="fa fa-twitter" style="--i:8;"></a>
+        <a href="#" class="fa fa-instagram" style="--i:9;"></a>
+      </div>-->
+		</section>
+		
+		
+		<footer>
+			<div class="m-5">
+				<a class="join-us" href="support-us.html">Join us</a>
+				
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+		</footer>
+		
+		<script src="js/header.js"></script>
+		<script src="vendor/b2t/js/b2t.js"></script>
+	</body>
+</html>
