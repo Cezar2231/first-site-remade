@@ -142,9 +142,12 @@ ul li {
 
 footer {
 	position:relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	background-color:black;
 	display:flex;
-	animation: slide-top 2s ease forwards;	
+	animation: slide-bottom-up 2s ease forwards;	
 }
 
 footer > div {
@@ -259,8 +262,7 @@ footer .join-us { color:lightblue; font-size: 22px; }
 .main-text{
   margin-left:50px;
   padding: 0;
-  box-sizing: border-box;
-  width: 750px;  
+  box-sizing: border-box;  
 }
 
 .text{
@@ -269,8 +271,16 @@ footer .join-us { color:lightblue; font-size: 22px; }
 }
 
 .donation-text{
+	display: inline;
   font-size: 35px;
   margin: 15px 0px;
+}
+
+.donation-picture{
+    width: 30rem;
+    float: right;
+		margin-left: 1rem;
+		border-radius: 0.5rem;
 }
 
 .donate-button{
@@ -282,6 +292,7 @@ footer .join-us { color:lightblue; font-size: 22px; }
   font-size: 16px;
   color:white;
   letter-spacing: 1px;
+	margin-left: 2rem;
 }
 
 .contact-button{
@@ -292,6 +303,10 @@ footer .join-us { color:lightblue; font-size: 22px; }
   font-size: 16px;
   color:white;
   letter-spacing: 1px;
+}
+
+.social-media{
+	display: inline-block;
 }
 
 /* animations */
@@ -311,6 +326,11 @@ footer .join-us { color:lightblue; font-size: 22px; }
 	to { top: 0px; opacity: 1; }
 }
 
+@keyframes slide-bottom-up{
+	from { bottom: -200px; opacity: 0; }
+	to { bottom: 0px; opacity: 1; }
+}
+
 
 /* media Query */
 
@@ -318,8 +338,9 @@ footer .join-us { color:lightblue; font-size: 22px; }
 	header .branding{ text-align: left; width: 100%; }
 	header nav{ display: none; }
 
-	.container h1{ font-size: 35px;}
-	.container h2{ font-size: 20px;}
+	.container h1{ font-size: 3rem;}
+	.container h2{ font-size: 1.5rem;}
+	.text-content{ font-size: rem; }
 
 	.img1, .tree3{ width:100%; }
 	.row{ display: grid; }
@@ -334,9 +355,20 @@ footer .join-us { color:lightblue; font-size: 22px; }
 	/* contacts */
 
 	.contacts-img{ width: 100%; }
-	.info { width: 12rem; }
-}
+	.info { width: 14rem; }
 
+	/* events */
+
+	.events-img{ width: 100%; }
+
+	/* support us */
+	.donation-picture{ display: none; }
+	.main-text{ margin-left: .3rem;}
+	.donate-button{ margin-left: 1rem;}
+	.social-media{ display: none;}
+	
+}
+/* for tablets */
 @media only screen and (max-width:950px){
 	header .branding{ text-align: left; width: 100%; }
 	header nav{ display: none; }
@@ -345,4 +377,9 @@ footer .join-us { color:lightblue; font-size: 22px; }
 
 	.row{ display: grid; }
 	.col-3 p{ font-size: 20px; width: 150%; text-align: center;  }
+}
+
+/* for galaxy fold phones */
+@media only screen and (max-width:325px){
+	.info { width: 11rem; }
 }
